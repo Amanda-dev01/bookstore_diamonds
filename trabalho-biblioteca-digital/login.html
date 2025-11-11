@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Bookstore Diamond's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header>
+        <div class="logo-container">
+            <img src="Imagens/Bookstore_icon.png" alt="Logo Livraria" class="logo-img">
+            <span class="logo-text">Bookstore Diamond's</span>
+        </div>
+        <div class="acessibilidade">
+            <button id="aumentar-fonte" aria-label="Aumentar fonte">A+</button>
+            <button id="diminuir-fonte" aria-label="Diminuir fonte">A-</button>
+            <button id="alternar-tema" aria-label="Alternar como escuro/claro">🌙</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <main class="pagina-login">
+        <div class="login-container">
+            <h1>Login</h1>
+            <p>Entre com seu email e senha para acessar sua conta.</p>
+
+            <form id="form-login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="************" required>
+
+                <button type="submit" class="botao-login">Entrar</button>
+            </form>
+
+            <div class="login-links">
+                <a href="#">Esqueci minha senha</a> |
+                <a href="#">Criar uma Conta</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!---RODAPÉ-->
+    <footer>
+        <div class="footer-titulo">
+            <h2>Adoraríamos ler com você. Fale conosco!</h2>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Imagens/img.png" alt="Logo" class="logo-footer">
+            </div>
+            <div class="footer-info">
+                <p><strong>Endereço:</strong> Rua das Letras, 123, Cidade dos Livros, BR</p>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@bookstorediamonds.com</p>
+            </div>
+            <div class="footer-redes">
+                <p>Siga-nos:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Bookstore Diamond's. Este é um projeto realizado em aula, imagens meramente ilustrativas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

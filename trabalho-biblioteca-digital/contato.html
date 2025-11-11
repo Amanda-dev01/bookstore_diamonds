@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Bookstore Diamond's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <header>
+        <div class="logo-container">
+            <img src="Imagens/Bookstore_icon.png" alt="Logo Livraria" class="logo-img">
+            <span class="logo-text">Bookstore Diamond's</span>
+        </div>
+        <div class="acessibilidade">
+            <button id="aumentar-fonte" aria-label="Aumentar fonte">A+</button>
+            <button id="diminuir-fonte" aria-label="Diminuir fonte">A-</button>
+            <button id="alternar-tema" aria-label="Alternar como escuro/claro">🌙</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Conteudo principal-->
+    <main class="pagina-contato">
+        <section class="contato-intro">
+            <h1>Fale Conosco</h1>
+            <p>Queremos ouvir você! Seja uma dúvida, sugestão ou parceria, estamos sempre prontos para conversar.</p>
+        </section>
+
+        <section class="contato-container">
+            <div class="contato-imagem">
+                <img src="Imagens/contato.png" alt="Imagem de contato">
+            </div>
+
+            <form class="form-contato">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" aria-rowspan="5" placeholder="Escreva sua mensagem aqui..."
+                    required></textarea>
+
+                <button type="submit" class="botao-enviar">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!---RODAPÉ-->
+    <footer>
+        <div class="footer-titulo">
+            <h2>Adoraríamos ler com você. Fale conosco!</h2>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Imagens/img.png" alt="Logo" class="logo-footer">
+            </div>
+            <div class="footer-info">
+                <p><strong>Endereço:</strong> Rua das Letras, 123, Cidade dos Livros, BR</p>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@bookstorediamonds.com</p>
+            </div>
+            <div class="footer-redes">
+                <p>Siga-nos:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Bookstore Diamond's. Este é um projeto realizado em aula, imagens meramente ilustrativas.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
