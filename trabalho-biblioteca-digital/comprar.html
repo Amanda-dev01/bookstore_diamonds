@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra | Bookstore Diamond's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <header>
+        <div class="logo-container">
+            <img src="Imagens/Bookstore_icon.png" alt="Logo Livraria" class="logo-img">
+            <span class="logo-text">Bookstore Diamond's</span>
+        </div>
+        <div class="acessibilidade">
+            <button id="aumentar-fonte" aria-label="Aumentar fonte">A+</button>
+            <button id="diminuir-fonte" aria-label="Diminuir fonte">A-</button>
+            <button id="alternar-tema" aria-label="Alternar como escuro/claro">🌙</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="biblioteca.html" class="ativo">Biblioteca</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <main class="pagina-compra-final">
+        <h1 class="titulo-principal">Finalizar Compra</h1>
+        <p class="descricao-compra">Escolha seu livro, preencha seus dados e finalize sua compra com segurança.</p>
+
+        <!--SELEÇÃO DO LIVRO-->
+        <section class="selecionar-livro">
+            <label for="livro-selecionado">Selecione o Livro</label>
+            <select id="livro-selecionado">
+                <option value="">-- Escolha um livro --</option>
+                <option value="A-CHAVE-DO-LABIRINTO-ASTRAL">A Chave do Labirinto Astral - Orion Nova</option>
+                <option value="A-CRONISTA-DOS-CEUS-ESQUECIDOS">A Cronista dos Céus Esquecidos - Aura Meridien</option>
+                <option value="A-CRONOMETISTA-DO-TEMPO-PERDIDO">A Cronometista do Tempo Perdido - Clara Tempus</option>
+                <option value="A-DAMA-DO-DESERTO-DE-AREIA">A Dama do Deserto de Areia - Zara Oasis</option>
+                <option value="A-ENGRENAGEM-DO-DESTINO">A Engrenagem do Destino - Kaelen Reid</option>
+                <option value="A-FLAUTA-DOS-VENTOS-ESCONDIDOS">A Flauta dos Ventos Escondidos - Elara Swift</option>
+                <option value="A-MELODIA-SILENCIOSA-DA-LUA">A Melodia Silenciosa da Lua - Rhys Montgomery</option>
+                <option value="A-SINFONIA-CRISTALINA-DOS-ORBES">A Sinfonia Cristalina dos Orbes - Professor Alistair Finch</option>
+                <option value="A-TECEIRA-DE-DESTINOS-NA-FLORESTA-SOMBRIA">A Teceira de Destinos na Floresta Sombria - Luna Whisper</option>
+                <option value="O-ALQUIMISTA-DA-LUZ-ETERNA">O Alquimista da Luz Eterna - Dr. Silas Vesper</option>
+            </select>
+        </section>
+
+        <!--VISUALIZAÇÃO DO LIVRO-->
+        <section class="livro-visualizacao" id="livro-visualizacao" style="display:none;">
+            <img id="livro-imagem" src="" alt="Capa do Livro">
+            <div class="livro-info">
+                <h2 id="livro-titulo"></h2>
+                <p id="livro-autor"></p>
+                <h3 id="livro-valor"></h3>
+            </div>
+        </section>
+
+        <!--FORMULÁRIO DE DADOS-->
+        <section class="dados-cliente">
+            <h2>Seus Dados</h2>
+            <form id="form-compra">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required>
+
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" required>
+                    <option value="">-- Escolha Forma de Pagamento --</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">Pix</option>
+                </select>
+
+                <button type="submit" class="botao-confirmar">Confirmar Compra</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div class="footer-titulo">
+            <h2>Adoraríamos ler com você. Fale conosco!</h2>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Imagens/img.png" alt="Logo" class="logo-footer">
+            </div>
+            <div class="footer-info">
+                <p><strong>Endereço:</strong> Rua das Letras, 123, Cidade dos Livros, BR</p>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@bookstorediamonds.com</p>
+            </div>
+            <div class="footer-redes">
+                <p>Siga-nos:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Bookstore Diamond's. Este é um projeto realizado em aula, imagens meramente ilustrativas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
